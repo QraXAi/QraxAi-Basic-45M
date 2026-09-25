@@ -1,0 +1,12 @@
+# QraXAi dependencies
+# Tested with Python 3.11, CUDA build of PyTorch (CPU also supported)
+#
+# Install:
+#   pip install -r requirements.txt
+
+# --- Core ---
+torch>=2.14.0            # tested with 2.14.0
+transformers>=5.17.0     # tested with 5.17.0 (custom model code requires trust_remote_code)
+datasets>=5.0.1          # tested with 5.0.1 (TinyStories download)
+huggingface_hub>=1.33.0  # tested with 1.33.0 (model upload / auth)
+tqdm>=4.70.1             # tested with 4.70.1 (training progress bar)

@@ -1,0 +1,55 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Tooling caches / test & coverage output ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# --- Environment / secrets ---
+.env
+.env.*
+*.key
+
+# --- Training data (regenerate with: python dataset/download.py) ---
+# ~111 MB, exceeds GitHub's file size recommendation
+dataset/data.txt
+
+# --- Trained model output (regenerate with: python train.py) ---
+# Uploaded to the Hugging Face Hub via push.py instead of Git
+qraxai/
+
+# --- Model weights and checkpoints (too large for GitHub's 100 MB limit) ---
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+runs/
+
+# --- Logs ---
+*.log
+
+# --- OS / editors ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
